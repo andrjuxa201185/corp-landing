@@ -3,9 +3,6 @@ header{
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background-image: url('../img/header-bg.png');
-    background-size: cover;
-    background-position: center;
 }
 header video{
     position: absolute;
@@ -13,6 +10,28 @@ header video{
     left: 0;
     bottom: 0;
     right: 0;
-    min-height: 100%;
-    z-index: 1;
+    width: 100%;
+    z-index: -1;
+    background-image: url('../img/header-bg.png');
+    background-size: cover;
+    background-position: center;
+}
+.header-title{
+    width: 750px;
+    text-align: center;
+}
+.header-title>p{
+    font-size: 60px;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+.header-title a{
+    align-self: center;
+    margin-top: 100px;
+    font-family: 'Exo', sans-serif;
+}
+.header-title p:last-of-type{
+    font-size: 13px;
+    color: #282828; 
+    margin-top: 20px;
 }

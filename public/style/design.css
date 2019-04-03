@@ -1,0 +1,31 @@
+
+.design{
+    background-color: #f8f8f8e1;
+}
+.design .wrapper-description{
+    padding: 140px;
+}
+.design .description p:not(.red-letter){
+    margin-top: 30px;
+}
+.design .img{
+    position: relative;
+    overflow: hidden;
+}
+.design .img::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    border: 720px solid transparent;	
+    border-right: 320px solid #ff6d6d; 
+    border-bottom: 620px solid #ff6d6d;
+    opacity: .5;
+}
+.design .img img{
+    width: 100%;
+    display: block;
+}
+

@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:100,500');
+
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Open Sans', sans-serif; */
 }
 a,p {
-    font-family: 'Exo thin', sans-serif;
+    font-family: 'Exo', sans-serif;
     text-decoration: none;
     color: inherit;
 }
@@ -17,6 +18,9 @@ a,p {
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
 }
 .col-12 {
     width: 100%;
@@ -78,6 +82,9 @@ a,p {
 .content-start{
     justify-content: flex-start;
 }
+.content-end{
+    justify-content: flex-end;
+}
 .align-center{
     align-items: center;
 }
@@ -94,21 +101,43 @@ a,p {
     flex-grow: 1;
 } 
 section {
-    padding: 80px 0;
-    overflow: hidden;
+    
 }
 .btn {
     font-family: 'Exo Regular', sans-serif;
     background-color: #ff6d6d;
     padding: 15px 45px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+    border: solid 1px #ff6d6d;
+    border-radius: 3px;
+    transition: all .5s;
 }
-.btn:hover{
 
+.btn:hover{
+    color: #ff6d6d;
+    background-color: transparent;
 }
 .no-scroll{
     margin: 0; 
     height: 100%; 
     overflow: hidden;
+}
+.red-letter{
+    color: #ff6d6d;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+h3.title{
+    font-family: 'Exo', sans-serif;
+    columns: #282828;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 @media screen and (max-width: 640px) {
