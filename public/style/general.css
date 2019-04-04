@@ -8,6 +8,7 @@
 }
 a,p {
     font-family: 'Exo', sans-serif;
+    font-style: initial;
     text-decoration: none;
     color: inherit;
 }
@@ -100,9 +101,6 @@ a,p {
 .grow-1 {
     flex-grow: 1;
 } 
-section {
-    
-}
 .btn {
     font-family: 'Exo Regular', sans-serif;
     background-color: #ff6d6d;
@@ -115,7 +113,6 @@ section {
     border-radius: 3px;
     transition: all .5s;
 }
-
 .btn:hover{
     color: #ff6d6d;
     background-color: transparent;
