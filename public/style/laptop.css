@@ -1,0 +1,22 @@
+.laptop{
+    padding: 90px 0;
+    overflow: hidden;
+    position: relative;
+}
+.laptop .wrapper-img{
+    padding: 0 50px;
+}
+.laptop img{
+    width: 100%;
+}
+.laptop .triangle{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 40%;
+    height: 100%;
+    border-right: 700px solid transparent;	
+    border-bottom: 600px solid #ff6d6d;
+}
+

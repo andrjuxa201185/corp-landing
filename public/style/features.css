@@ -1,9 +1,8 @@
 .features{
     background-color: #f6f5f3ad;
     padding: 130px 0;
-}
-.features{
     position: relative;
+    overflow: hidden;
 }
 .features>.container>img{
     position: absolute;
@@ -21,6 +20,10 @@
 .features>.container>img:last-of-type{
     bottom: -90px;
     right: 30%;
+}
+.features>.container>.row{
+    position: relative;
+    z-index: 10;
 }
 .features h3{
     margin-bottom: 70px;

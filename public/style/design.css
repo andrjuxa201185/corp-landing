@@ -12,17 +12,19 @@
     position: relative;
     overflow: hidden;
 }
-.design .img::after{
-    content: '';
-    display: block;
+.design .img .triangle{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60%;
-    border: 720px solid transparent;	
-    border-right: 320px solid #ff6d6d; 
-    border-bottom: 620px solid #ff6d6d;
+    border-left: 700px solid transparent;	
+    border-bottom: 600px solid #ff6d6d;
     opacity: .5;
+    transition: all .3s;
+}
+.design .img:hover .triangle{
+    border-left: 0px solid transparent;	
+    border-bottom: 1620px solid #ff6d6d;
+    opacity: 0;
 }
 .design .img img{
     width: 100%;
