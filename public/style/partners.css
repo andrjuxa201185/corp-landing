@@ -2,6 +2,7 @@
     background-image: url('../img/partn-bg.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     padding: 90px 0;
 }
 .partners .item{

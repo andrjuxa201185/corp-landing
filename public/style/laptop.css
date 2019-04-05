@@ -1,22 +1,73 @@
 .laptop{
-    padding: 90px 0;
     overflow: hidden;
-    position: relative;
 }
 .laptop .wrapper-img{
-    padding: 0 50px;
+    position: relative;
+    border-bottom: solid 450px #ff6d6d;
+    border-right: solid 500px transparent;
+    transform: translateX(-150%);
 }
-.laptop img{
-    width: 100%;
-}
-.laptop .triangle{
+.laptop .wrapper-img img{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    width: 40%;
-    height: 100%;
-    border-right: 700px solid transparent;	
-    border-bottom: 600px solid #ff6d6d;
+    top:50%;
+    left: 50%;
+}
+.wrapper-triangles{
+    background-image: url('../img/partn-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.laptop .description{
+    position: relative;
+    background: white;
+    transform: translateX(170%);
+    padding: 90px 0;;
+}
+.laptop .description::after{
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0;
+    border-top: solid 450px white;
+    border-left: solid 500px transparent;
+}
+@keyframes moveHalf1{
+    from{
+        transform: translateX(-100%);
+    }
+    40%{
+        transform: translateX(1%);
+    }
+    80%{
+        transform: translateX(-10%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+@keyframes moveHalf2{
+    from{
+        transform: translateX(170%);
+    }
+    40%{
+        transform: translateX(-1%);
+    }
+    80%{
+        transform: translateX(10%);
+    }
+    to{
+        transform: translateX(0%);
+    }
+}
+.wrapper-triangles:hover .description{
+    animation-name: moveHalf2;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+}
+.wrapper-triangles:hover .wrapper-img{
+    animation-name: moveHalf1;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
 }
 
