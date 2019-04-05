@@ -3,26 +3,33 @@
 }
 .laptop .wrapper-img{
     position: relative;
+    z-index: 2;
     border-bottom: solid 450px #ff6d6d;
     border-right: solid 500px transparent;
     transform: translateX(-150%);
+    transition: transform .5s;
 }
-.laptop .wrapper-img img{
+.laptop img{
     position: absolute;
-    top:50%;
-    left: 50%;
+    top:10%;
+    left: 10%;
+    z-index: 5;
+    /* opacity: 0; */
 }
 .wrapper-triangles{
     background-image: url('../img/partn-bg.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
 }
 .laptop .description{
     position: relative;
+    z-index: 2;
     background: white;
     transform: translateX(170%);
-    padding: 90px 0;;
+    padding: 90px 0;
+    transition: transform .5s;
 }
 .laptop .description::after{
     content: '';
@@ -32,42 +39,21 @@
     border-top: solid 450px white;
     border-left: solid 500px transparent;
 }
-@keyframes moveHalf1{
-    from{
-        transform: translateX(-100%);
-    }
-    40%{
-        transform: translateX(1%);
-    }
-    80%{
-        transform: translateX(-10%);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
-@keyframes moveHalf2{
-    from{
-        transform: translateX(170%);
-    }
-    40%{
-        transform: translateX(-1%);
-    }
-    80%{
-        transform: translateX(10%);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
 .wrapper-triangles:hover .description{
-    animation-name: moveHalf2;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
+    transform: translateX(0%);
 }
 .wrapper-triangles:hover .wrapper-img{
-    animation-name: moveHalf1;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
+    transform: translateX(0%);
 }
-
+.laptop .description .title{
+    color: white;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px silver,
+    -2px -2px 1px silver,
+    -3px -3px 1px silver,
+    -4px -4px 1px silver,
+    -5px -5px 1px silver,
+    -6px -6px 1px silver,
+    -7px -7px 5px silver;
+    transform: translate(7px, 7px);
+}
