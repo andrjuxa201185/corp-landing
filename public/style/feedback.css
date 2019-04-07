@@ -1,0 +1,54 @@
+.feedback{
+    background-color: #323969;
+    padding: 90px 0;
+}
+.feedback .title{
+    color: white;
+}
+.feedback-form{
+    margin-top: 100px;
+}
+.feedback-form .form-item{
+    border: solid 1px #999cb4;
+    padding: 15px 20px;
+    width: 20%;
+    background-color: #464c77;
+    color: #f6f5f3;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
+.feedback-form .form-item:last-child{
+    padding: 0;
+    position: relative;
+}
+.feedback-form input::placeholder{
+    color: #f6f5f3; 
+}
+.feedback-form .input-submit{
+    background-color: #ff6d6d;
+    border: none;
+    padding: 15px 20px;
+    color: #f6f5f3;
+    letter-spacing: 1px;
+    width: 100%;
+    cursor: pointer;
+}
+.feedback-form .arrow-after::after {
+    content: '30 days free trial for all.';
+    position: absolute;
+    top: -60px;
+    color: #f6f5f3;
+    font-family: 'Exo', sans-serif;
+    left: 20px;
+    font-size: 14px;
+}
+.feedback-form .arrow-after img{
+    position: absolute;
+    left: 0;
+    top: -50px;
+}
+.feedback .agree{
+    color: #f6f5f3;
+    margin-top: 50px;
+}
+
