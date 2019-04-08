@@ -13,8 +13,32 @@
     position: absolute;
     top:10%;
     left: 10%;
-    z-index: 5;
-    /* opacity: 0; */
+    z-index: 1;
+    width: 500px;
+}
+.laptop-appearence {
+    animation-name: laptop;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+    animation-duration: .5s; 
+    animation-play-state: running;
+}
+@keyframes laptop{
+    0%{
+        opacity: 0;
+        z-index: 1;
+        transform: scale(.5);
+    }
+    10%{
+        z-index: 5;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        z-index: 5;
+        transform: scale(1);
+    }
 }
 .wrapper-triangles{
     background-image: url('../img/partn-bg.png');
@@ -28,32 +52,45 @@
     z-index: 2;
     background: white;
     transform: translateX(170%);
-    padding: 90px 0;
+    padding: 90px 30px;
     transition: transform .5s;
 }
 .laptop .description::after{
     content: '';
     position: absolute;
+    z-index: 2;
     right: 100%;
     top: 0;
     border-top: solid 450px white;
     border-left: solid 500px transparent;
 }
-.wrapper-triangles:hover .description{
-    transform: translateX(0%);
-}
-.wrapper-triangles:hover .wrapper-img{
-    transform: translateX(0%);
-}
 .laptop .description .title{
     color: white;
     font-weight: bold;
+    position: relative;
+    z-index: 5;
+}
+@keyframes title{
+    0%{
+        text-shadow: 0px 0px 0px silver;
+        transform: translate(0px, 0px);
+    }
+    100%{
     text-shadow: -1px -1px 1px silver,
-    -2px -2px 1px silver,
-    -3px -3px 1px silver,
-    -4px -4px 1px silver,
-    -5px -5px 1px silver,
-    -6px -6px 1px silver,
-    -7px -7px 5px silver;
+        -2px -2px 1px silver,
+        -3px -3px 1px silver,
+        -4px -4px 1px silver,
+        -5px -5px 1px silver,
+        -6px -6px 1px silver,
+        -7px -7px 5px silver;
     transform: translate(7px, 7px);
+    }
+}
+.title-shadow {
+    animation-name: title;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-duration: 1.5s; 
+    animation-play-state: running;
 }
