@@ -35,3 +35,17 @@ header video{
     color: #282828; 
     margin-top: 20px;
 }
+
+@media screen and (max-width: 1279px){
+    header{
+        background-image: url('../img/header-bg.png');
+        background-size: cover;
+        background-position: center;
+    }
+    header video{
+        display: none;
+    }
+}
+@media screen and (max-width: 980px){
+    
+}
