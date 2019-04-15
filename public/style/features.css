@@ -8,6 +8,7 @@
     position: absolute;
     display: block;
     z-index: 1;
+    /* transition: all 5s; */
 }
 .features>.container>img:first-of-type{
     top: -50px;
